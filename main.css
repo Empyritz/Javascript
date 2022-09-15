@@ -16,14 +16,21 @@ h1 {
     font-style: italic;
 }
 
+.btnContainer {
+    display: grid;
+    place-content: center;
+}
+
 button {
+    margin-bottom: 20px;
     color: #016f32;
-    width: auto;
+    max-width: 300px;  
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: bold;
     background-color: goldenrod;
     white-space: nowrap;
     border: none;
     border-radius: 13px;
     cursor: pointer;
+    padding: 5px 13px;
 }
