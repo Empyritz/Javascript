@@ -34,3 +34,7 @@ button {
     cursor: pointer;
     padding: 5px 13px;
 }
+
+.showBtn {
+    display: none;
+}
