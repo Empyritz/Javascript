@@ -4,16 +4,24 @@ let message = ""
 let isAlive = false
 let hasBlackjack = false
 
+let player = {
+    name: "empyritz",
+    chips: 145, 
+}
+
 
 let messageEl = document.querySelector("#message-el")
 let startBtn = document.querySelector("#buttonStart")
 let newBtn = document.querySelector("#buttonNew")
 let sumEl = document.querySelector("#sum-el")
 let cardsEl = document.querySelector("#cards-el")
+let playerEl = document.querySelector("#player-el")
 
 
 startBtn.addEventListener("click", startGame)
 newBtn.addEventListener("click", newCard)
+
+playerEl.textContent = player.name + ": $" + player.chips
 
 
 function getRandomCard () {
